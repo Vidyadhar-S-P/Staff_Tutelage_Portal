@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.7em;
+	font-family:constantia;
+	font-size: 15px;
+	letter-spacing:1px;
+	color: #CCC;
+    background: #3f3f3f url(../images/templatemo_body.jpg) repeat;
+}
+		
+p
+{
+text-align:justify;
+}
+img { margin: 0px; padding: 0px; border: none; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+
+
+#wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/* menu */
+
+#menu {
+	width: 980px;
+	height: 58px;
+	margin: 0 auto;
+	padding: 0;
+    background: url(../images/templatemo_menu.jpg) no-repeat;
+}
+
+#menu ul {
+	width: 540px;
+	margin: 0 auto;
+	padding: 26px 10px 0 10px;
+	list-style: none;
+}
+
+#menu ul li {
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+#menu ul li a {
+	display: block;
+	float: left;
+	height: 25px;
+	padding: 5px 20px 0 20px;
+	margin-right: 1px;
+	text-align: center;
+	font-size: 12px;
+	text-decoration: none;
+	color: #000000;	
+	font-weight: bold;
+	outline: none;
+	width:85px;
+}
+
+#menu li a:hover, #menu li .current {
+	color: #ffffff;
+	background-image: url(../images/templatemo_menu_hover.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+/* end of menu */
+
+/* site title */
+
+#header {
+	width: 980px;
+	height: 128px;
+	margin: 0 auto;
+	background: url(../images/templatemo_header.jpg);
+	background-repeat: no-repeat;
+}
+
+#header #site_title {
+	padding-top: 35px;
+	width: 980px;
+	text-align: center;
+}
+
+#header a {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* end of site title */
+
+#wrapper_outter {
+	clear: both;
+	width: 980px;
+	margin: 0 auto;
+	background: url(../images/templatemo_content.jpg);
+	background-repeat: repeat-y;
+	background-position: top;
+}
+
+#content_wrapper {
+	width: 830px;
+	padding: 40px 75px 0 75px;
+	background: url(../images/templatemo_content_top.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.content_section {
+	clear: both;
+	margin-bottom: 40px;
+}
+
+.content_section h2 {
+	padding: 0 0 15px 0;
+	margin: 0 0 25px 0;
+	color: #5e6972;
+	font-size: 18px;
+	background: url(../images/templatemo_header.png) left bottom no-repeat;
+}
+
+#footer {
+	width: 840px;
+	height: 105px;
+	color: #666;
+	padding: 5px 70px 0 70px;
+	background: url(../images/templatemo_footer.jpg) no-repeat;
+}
+
+#footer a {
+	color: #666;
+}
+
+#footer a:hover {
+	color: #333;
+}

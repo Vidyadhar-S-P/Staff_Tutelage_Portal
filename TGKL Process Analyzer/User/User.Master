@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="TGKL_Process_Analyzer.User.User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TGKL Process Analyzer</title>
+
+    <!-- Page Style and Control CSS -->
+   	<link href="../CSS/TGKLpagestyles.css" rel="stylesheet" type="text/css" />
+ 	<link href="../CSS/control.css" rel="Stylesheet" type="text/css" />
+
+    <!-- Slide Script and CSS -->
+    <link href="../CSS/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="../CSS/js-image-slider.js"type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div id="wrapper">
+
+     <asp:ContentPlaceHolder ID="menucontent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+	
+    
+    <div id="header">
+
+        <div id="site_title">
+			<a href="#">
+                <img src="../images/templatemo_logo.png" alt="TGKL Process Analyzer" />
+            </a>
+        </div> <!-- end of site_title -->
+    
+    </div> <!-- end of templatemo_header -->
+    
+    <div id="wrapper_outter">
+    	
+        <div id="content_wrapper">
+        
+        	<div class="content_section">
+        
+        <h2>TOYOTA TECHNO PARK. TGKL</h2>
+            
+            <div id="sliderFrame">
+       		<div id="slider">
+         	<img src="../images/Slide Images/1.png" alt="TGKL Process Analyzer" />
+         	<img src="../images/Slide Images/2.png" alt="" />
+       		</div>
+   			</div>
+
+        <asp:ContentPlaceHolder ID="bodycontent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+            
+            <div class="cleaner"></div>
+        </div> <!-- end of templatemo_content_wrapper -->
+    
+    	<div class="cleaner">&nbsp;</div>
+    </div> <!-- templatemo_content_wrapper_outter -->
+    
+    <div id="footer">
+    	 Copyright ©  <a href="#">TGKL | Designed By : Student </a>     
+    </div> <!-- end of templatemo_footer -->
+
+</div> <!-- end of wrapper -->
+    </form>
+</body>
+</html>

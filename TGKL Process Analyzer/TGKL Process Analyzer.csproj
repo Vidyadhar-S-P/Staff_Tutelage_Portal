@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19432ABB-9DBA-4EF4-B483-BE32F0F974A6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TGKL_Process_Analyzer</RootNamespace>
+    <AssemblyName>TGKL Process Analyzer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Adminaddemployees.aspx" />
+    <Content Include="Admin\Adminarticleslist.aspx" />
+    <Content Include="Admin\Adminemployeeslist.aspx" />
+    <Content Include="Admin\Adminreport.aspx" />
+    <Content Include="App_Data\TGKLdatabase.mdf" />
+    <Content Include="App_Data\TGKLdatabase_log.ldf">
+      <DependentUpon>TGKLdatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="CSS\control.css" />
+    <Content Include="CSS\js-image-slider.css" />
+    <Content Include="CSS\js-image-slider.js" />
+    <Content Include="CSS\TGKLpagestyles.css" />
+    <Content Include="CSS\_notes\dwsync.xml" />
+    <Content Include="Global.asax" />
+    <Content Include="images\doubt.gif" />
+    <Content Include="images\exam.png" />
+    <Content Include="images\Score.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\Slide Images\1.png" />
+    <Content Include="images\Slide Images\2.png" />
+    <Content Include="images\Slide Images\_notes\dwsync.xml" />
+    <Content Include="images\templatemo_body.jpg" />
+    <Content Include="images\templatemo_content.jpg" />
+    <Content Include="images\templatemo_content_top.jpg" />
+    <Content Include="images\templatemo_divider.png" />
+    <Content Include="images\templatemo_footer.jpg" />
+    <Content Include="images\templatemo_header.jpg" />
+    <Content Include="images\templatemo_header.png" />
+    <Content Include="images\templatemo_list.png" />
+    <Content Include="images\templatemo_logo.png" />
+    <Content Include="images\templatemo_menu.jpg" />
+    <Content Include="images\templatemo_menu_hover.jpg" />
+    <Content Include="images\upload.png" />
+    <Content Include="images\_notes\dwsync.xml" />
+    <Content Include="Manager\Managerdoubtclearence.aspx" />
+    <Content Include="Manager\Managerdoubtslist.aspx" />
+    <Content Include="Manager\Managerpostexam.aspx" />
+    <Content Include="Manager\Manageruploadarticles.aspx" />
+    <Content Include="Manager\Manageruploadedarticleslist.aspx" />
+    <Content Include="Trainee\Traineearticles.aspx" />
+    <Content Include="Trainee\Traineedownloadarticles.aspx" />
+    <Content Include="Trainee\Traineefinalscore.aspx" />
+    <Content Include="Trainee\Traineeinbox.aspx" />
+    <Content Include="Trainee\Traineepostnewdoubt.aspx" />
+    <Content Include="Trainee\Traineetakeexam.aspx" />
+    <Content Include="User\Aboutus.aspx" />
+    <Content Include="User\Contactus.aspx" />
+    <Content Include="User\Index.aspx" />
+    <Content Include="User\Login.aspx" />
+    <Content Include="User\Logout.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Adminaddemployees.aspx.cs">
+      <DependentUpon>Adminaddemployees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Adminaddemployees.aspx.designer.cs">
+      <DependentUpon>Adminaddemployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Adminarticleslist.aspx.cs">
+      <DependentUpon>Adminarticleslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Adminarticleslist.aspx.designer.cs">
+      <DependentUpon>Adminarticleslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Adminemployeeslist.aspx.cs">
+      <DependentUpon>Adminemployeeslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Adminemployeeslist.aspx.designer.cs">
+      <DependentUpon>Adminemployeeslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Adminpage.Master.cs">
+      <DependentUpon>Adminpage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Adminpage.Master.designer.cs">
+      <DependentUpon>Adminpage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Adminreport.aspx.cs">
+      <DependentUpon>Adminreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Adminreport.aspx.designer.cs">
+      <DependentUpon>Adminreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Database.cs" />
+    <Compile Include="Code\readyclass.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Managerdoubtclearence.aspx.cs">
+      <DependentUpon>Managerdoubtclearence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Managerdoubtclearence.aspx.designer.cs">
+      <DependentUpon>Managerdoubtclearence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Managerdoubtslist.aspx.cs">
+      <DependentUpon>Managerdoubtslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Managerdoubtslist.aspx.designer.cs">
+      <DependentUpon>Managerdoubtslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Managerpostexam.aspx.cs">
+      <DependentUpon>Managerpostexam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Managerpostexam.aspx.designer.cs">
+      <DependentUpon>Managerpostexam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manageruploadarticles.aspx.cs">
+      <DependentUpon>Manageruploadarticles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Manageruploadarticles.aspx.designer.cs">
+      <DependentUpon>Manageruploadarticles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manageruploadedarticleslist.aspx.cs">
+      <DependentUpon>Manageruploadedarticleslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Manageruploadedarticleslist.aspx.designer.cs">
+      <DependentUpon>Manageruploadedarticleslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trainee\Traineearticles.aspx.cs">
+      <DependentUpon>Traineearticles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trainee\Traineearticles.aspx.designer.cs">
+      <DependentUpon>Traineearticles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trainee\Traineedownloadarticles.aspx.cs">
+      <DependentUpon>Traineedownloadarticles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trainee\Traineedownloadarticles.aspx.designer.cs">
+      <DependentUpon>Traineedownloadarticles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trainee\Traineefinalscore.aspx.cs">
+      <DependentUpon>Traineefinalscore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trainee\Traineefinalscore.aspx.designer.cs">
+      <DependentUpon>Traineefinalscore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trainee\Traineeinbox.aspx.cs">
+      <DependentUpon>Traineeinbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trainee\Traineeinbox.aspx.designer.cs">
+      <DependentUpon>Traineeinbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trainee\Traineepostnewdoubt.aspx.cs">
+      <DependentUpon>Traineepostnewdoubt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trainee\Traineepostnewdoubt.aspx.designer.cs">
+      <DependentUpon>Traineepostnewdoubt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trainee\Traineetakeexam.aspx.cs">
+      <DependentUpon>Traineetakeexam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trainee\Traineetakeexam.aspx.designer.cs">
+      <DependentUpon>Traineetakeexam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Aboutus.aspx.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Aboutus.aspx.designer.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Contactus.aspx.cs">
+      <DependentUpon>Contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Contactus.aspx.designer.cs">
+      <DependentUpon>Contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Books\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Adminpage.Master" />
+    <None Include="images\Thumbs.db" />
+    <Content Include="User\User.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1037</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
